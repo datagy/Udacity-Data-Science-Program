@@ -42,6 +42,17 @@ We can see that Airbnb rates are significantly higher, even when factoring in di
 
 This neighborhood lens provides an interesting perspective. To close out the article, let's explore how the short-term rental market varies geographically in Boston, both in terms of number of units and average cost for a 1-bedroom unit.
 
+## How do Rental Rates Vary Between Regular Units and Airbnb Units?
+Now, let's take a look at the flip side of this argument. Airbnb is generating economic opportunities for hosts - but what impact is it having on affordability?
+
+Airbnb provides the opportunity to offer long-term rental discounts (either by week or by month). The graph below compares rental rates between regular units and Airbnb units, within different Boston neighborhoods:
+
+![Rental Rates](costs.png)
+
+We can see that Airbnb rates are significantly higher, even when factoring in discounts. 
+
+This neighborhood lens provides an interesting perspective. To close out the article, let's explore how the short-term rental market varies geographically in Boston, both in terms of number of units and average cost for a 1-bedroom unit.
+
 ## How do Boston Neighborhoods Vary in Price and Number of Units?
 ### Price of 1-bedroom units in Boston Neighborhoods
 We saw earlier that the price of neighborhoods varied dramatically. Let's see how this looks on a map to see whether or not proximity to downtown or to the airport makes a difference in price:
@@ -53,4 +64,17 @@ We can see from this map that proximity to both the downtown core and the airpor
 Let's see if these trends carry over into the number of units:
 
 ### Number of units available to rent in Boston Neighborhoods
-In the map below, you can see that the number 
+In the map below, you can see that the number of units available in Airbnb increases as you approach the city center and the airport area:
+
+![number of units map](unitsmap.png)
+
+This change doesn't happen as dramatically, however, as price does!
+
+## Conclusion
+In this article, we explored the Boston Airbnb market, in terms of growth, affordability, impact on local rental markets, and its geographic distribution.
+
+In particular, we learned that:
+1. Many dedicated units are standing empty 45% of the time,
+2. Lots of people are becoming Airbnb hosts,
+3. Airbnb costs significantly more than normal rental stock, and
+4. Geographically, more units and higher prices exist towards the downtown.
