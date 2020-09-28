@@ -42,7 +42,7 @@ I also used data from various other sources. These include:
 * rental pricing information from [Rent Cafe](https://www.rentcafe.com/average-rent-market-trends/us/ma/boston/)
 
 ## Results
-The main findings of the code can be found at the post available here.
+The main findings of the code can be found at the post available [here](https://github.com/datagy/CRISP-DM/blob/master/Blog%20Post.md).
 
 ## Licensing, Authors, and Acknowledgements
 The data was made available via Kaggle, City of Boston, and Rent Cafe. 
