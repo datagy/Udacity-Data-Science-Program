@@ -1,4 +1,6 @@
-# Creative Title
+# Airbnb in Boston - Economic Opportunity or Rental Market Mayhem?
+
+![cover image](airbnb-2384737_1280.jpg)
 
 Airbnb has been under a lot of scrutiny for its impacts on the local rental market, but it's also created an entirely new economy that has brought benefits to many in renting out spare bedrooms. In this post, we'll explore the Boston Airbnb Open Dataset available via [Kaggle](https://www.kaggle.com/airbnb/boston). 
 
