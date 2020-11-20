@@ -1,6 +1,7 @@
 import json
 import plotly
 import pandas as pd
+import sqlite3
 
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
@@ -26,13 +27,11 @@ def tokenize(text):
     return clean_tokens
 
 # load data
-engine = create_engine('sqlite:///../data/DisasterResponse.db')
-df = pd.read_sql_table('messages', engine)
+conn = sqlite3.connect('../data/DisasterResponse.db')
+df = pd.read_sql_query("select * from messages;", conn)
 
 # load model
-# with open('models\classifer.pkl','rb') as f:
-#     model=pickle.load(f)
-model = joblib.load("..\models\classifier.pkl")
+model = joblib.load("../models/classifier.pkl")
 
 
 # index webpage displays cool visuals and receives user input text for model
@@ -44,6 +43,8 @@ def index():
     # TODO: Below is an example - modify to extract data for your own visuals
     genre_counts = df.groupby('genre').count()['message']
     genre_names = list(genre_counts.index)
+    category_counts = df.drop(['id', 'message', 'original', 'genre'], axis=1).sum().sort_values(ascending=False)
+    category_names = list(category_counts.index)
     
     # create visuals
     # TODO: Below is an example - modify to create your own visuals
@@ -63,6 +64,24 @@ def index():
                 },
                 'xaxis': {
                     'title': "Genre"
+                }
+            }
+        },
+        {
+            'data': [
+                Bar(
+                    x=category_names,
+                    y=category_counts
+                )
+            ],
+
+            'layout': {
+                'title': 'Distribution of Categories',
+                'yaxis': {
+                    'title': "Count"
+                },
+                'xaxis': {
+                    'title': "Category"
                 }
             }
         }
